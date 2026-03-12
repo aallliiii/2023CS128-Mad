@@ -1,10 +1,13 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
 
-    <style name="Theme._2023CS128eventmanagement" parent="Theme.AppCompat.Light.NoActionBar">
+    <style name="Theme._2023CS128eventmanagement" parent="Theme.AppCompat.NoActionBar">
         <item name="colorPrimary">@color/color_primary</item>
-        <item name="colorPrimaryDark">@color/color_primary_dark</item>
+        <item name="colorPrimaryDark">@color/splash_bg</item>
         <item name="colorAccent">@color/color_accent</item>
+        <item name="android:windowBackground">@color/splash_bg</item>
+        <item name="android:statusBarColor">@color/splash_bg</item>
+        <item name="android:navigationBarColor">@color/splash_bg</item>
     </style>
 
     <style name="Theme.Splash" parent="Theme.AppCompat.NoActionBar">
