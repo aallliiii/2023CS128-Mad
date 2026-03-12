@@ -16,4 +16,10 @@
     <color name="color_text_primary">#212121</color>
     <color name="color_text_secondary">#757575</color>
     <color name="color_divider">#BDBDBD</color>
+
+    <!-- Dark splash colors -->
+    <color name="splash_bg">#0D1117</color>
+    <color name="splash_card">#161B22</color>
+    <color name="splash_text_muted">#8B949E</color>
+    <color name="splash_accent_blue">#1E88E5</color>
 </resources>
