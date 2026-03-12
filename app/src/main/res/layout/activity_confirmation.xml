@@ -3,178 +3,284 @@
     xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="@color/color_background">
+    android:background="@color/splash_bg"
+    android:fillViewport="true">
 
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:orientation="vertical"
-        android:gravity="center_horizontal"
-        android:padding="20dp">
+        android:paddingStart="20dp"
+        android:paddingEnd="20dp"
+        android:paddingTop="72dp"
+        android:paddingBottom="72dp">
+
+        <!-- Header -->
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="ALL DONE"
+            android:textColor="@color/color_accent"
+            android:textSize="11sp"
+            android:letterSpacing="0.3"
+            android:textAllCaps="true"
+            android:layout_marginBottom="6dp" />
 
         <TextView
             android:id="@+id/tvConfirmTitle"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:text="@string/confirm_title"
-            android:textColor="@color/color_primary"
-            android:textSize="24sp"
+            android:textColor="@color/white"
+            android:textSize="26sp"
             android:textStyle="bold"
-            android:gravity="center"
-            android:layout_marginBottom="8dp" />
+            android:layout_marginBottom="4dp" />
 
-        <TextView
-            android:id="@+id/tvConfirmMessage"
+        <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:text="@string/confirm_message"
-            android:textColor="@color/color_text_secondary"
-            android:textSize="15sp"
+            android:orientation="horizontal"
+            android:gravity="center_vertical"
+            android:layout_marginBottom="32dp">
+            <View
+                android:layout_width="3dp"
+                android:layout_height="14dp"
+                android:background="@color/color_accent"
+                android:layout_marginEnd="10dp" />
+            <TextView
+                android:id="@+id/tvConfirmMessage"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/confirm_message"
+                android:textColor="@color/splash_text_muted"
+                android:textSize="13sp" />
+        </LinearLayout>
+
+        <!-- Profile image centered -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
             android:gravity="center"
-            android:layout_marginBottom="20dp" />
+            android:layout_marginBottom="28dp">
 
-        <ImageView
-            android:id="@+id/ivProfileImage"
-            android:layout_width="120dp"
-            android:layout_height="120dp"
-            android:scaleType="centerCrop"
-            android:background="@drawable/spinner_background"
-            android:contentDescription="@string/label_photo"
-            android:layout_marginBottom="24dp" />
+            <ImageView
+                android:id="@+id/ivProfileImage"
+                android:layout_width="110dp"
+                android:layout_height="110dp"
+                android:scaleType="centerCrop"
+                android:background="@drawable/dark_image_preview"
+                android:contentDescription="@string/label_photo" />
 
-        <!-- Details card -->
+        </LinearLayout>
+
+        <!-- ── REGISTRATION SUMMARY card ── -->
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="REGISTRATION SUMMARY"
+            android:textColor="@color/splash_text_muted"
+            android:textSize="10sp"
+            android:letterSpacing="0.25"
+            android:textAllCaps="true"
+            android:layout_marginBottom="8dp" />
+
         <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:orientation="vertical"
-            android:background="@color/color_surface"
+            android:background="@drawable/dark_card_bg"
             android:padding="16dp"
-            android:layout_marginBottom="24dp">
+            android:layout_marginBottom="28dp">
 
+            <!-- Name row -->
             <LinearLayout
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:orientation="horizontal"
-                android:layout_marginBottom="12dp">
+                android:gravity="center_vertical"
+                android:paddingTop="10dp"
+                android:paddingBottom="10dp">
                 <TextView
                     android:layout_width="100dp"
                     android:layout_height="wrap_content"
                     android:text="@string/label_name"
-                    android:textStyle="bold"
-                    android:textColor="@color/color_text_primary" />
+                    android:textColor="@color/splash_text_muted"
+                    android:textSize="12sp"
+                    android:letterSpacing="0.05" />
                 <TextView
                     android:id="@+id/tvName"
                     android:layout_width="0dp"
                     android:layout_height="wrap_content"
                     android:layout_weight="1"
-                    android:textColor="@color/color_text_secondary" />
+                    android:textColor="@color/white"
+                    android:textSize="14sp"
+                    android:textStyle="bold" />
             </LinearLayout>
 
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="#21262D" />
+
+            <!-- Phone row -->
             <LinearLayout
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:orientation="horizontal"
-                android:layout_marginBottom="12dp">
+                android:gravity="center_vertical"
+                android:paddingTop="10dp"
+                android:paddingBottom="10dp">
                 <TextView
                     android:layout_width="100dp"
                     android:layout_height="wrap_content"
                     android:text="@string/label_phone"
-                    android:textStyle="bold"
-                    android:textColor="@color/color_text_primary" />
+                    android:textColor="@color/splash_text_muted"
+                    android:textSize="12sp"
+                    android:letterSpacing="0.05" />
                 <TextView
                     android:id="@+id/tvPhone"
                     android:layout_width="0dp"
                     android:layout_height="wrap_content"
                     android:layout_weight="1"
-                    android:textColor="@color/color_text_secondary" />
+                    android:textColor="@color/white"
+                    android:textSize="14sp"
+                    android:textStyle="bold" />
             </LinearLayout>
 
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="#21262D" />
+
+            <!-- Email row -->
             <LinearLayout
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:orientation="horizontal"
-                android:layout_marginBottom="12dp">
+                android:gravity="center_vertical"
+                android:paddingTop="10dp"
+                android:paddingBottom="10dp">
                 <TextView
                     android:layout_width="100dp"
                     android:layout_height="wrap_content"
                     android:text="@string/label_email"
-                    android:textStyle="bold"
-                    android:textColor="@color/color_text_primary" />
+                    android:textColor="@color/splash_text_muted"
+                    android:textSize="12sp"
+                    android:letterSpacing="0.05" />
                 <TextView
                     android:id="@+id/tvEmail"
                     android:layout_width="0dp"
                     android:layout_height="wrap_content"
                     android:layout_weight="1"
-                    android:textColor="@color/color_text_secondary" />
+                    android:textColor="@color/white"
+                    android:textSize="14sp"
+                    android:textStyle="bold" />
             </LinearLayout>
 
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="#21262D" />
+
+            <!-- Event type row -->
             <LinearLayout
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:orientation="horizontal"
-                android:layout_marginBottom="12dp">
+                android:gravity="center_vertical"
+                android:paddingTop="10dp"
+                android:paddingBottom="10dp">
                 <TextView
                     android:layout_width="100dp"
                     android:layout_height="wrap_content"
                     android:text="@string/label_event"
-                    android:textStyle="bold"
-                    android:textColor="@color/color_text_primary" />
+                    android:textColor="@color/splash_text_muted"
+                    android:textSize="12sp"
+                    android:letterSpacing="0.05" />
                 <TextView
                     android:id="@+id/tvEventType"
                     android:layout_width="0dp"
                     android:layout_height="wrap_content"
                     android:layout_weight="1"
-                    android:textColor="@color/color_text_secondary" />
+                    android:textColor="@color/color_accent"
+                    android:textSize="14sp"
+                    android:textStyle="bold" />
             </LinearLayout>
 
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="#21262D" />
+
+            <!-- Date row -->
             <LinearLayout
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:orientation="horizontal"
-                android:layout_marginBottom="12dp">
+                android:gravity="center_vertical"
+                android:paddingTop="10dp"
+                android:paddingBottom="10dp">
                 <TextView
                     android:layout_width="100dp"
                     android:layout_height="wrap_content"
                     android:text="@string/label_date_confirm"
-                    android:textStyle="bold"
-                    android:textColor="@color/color_text_primary" />
+                    android:textColor="@color/splash_text_muted"
+                    android:textSize="12sp"
+                    android:letterSpacing="0.05" />
                 <TextView
                     android:id="@+id/tvDate"
                     android:layout_width="0dp"
                     android:layout_height="wrap_content"
                     android:layout_weight="1"
-                    android:textColor="@color/color_text_secondary" />
+                    android:textColor="@color/white"
+                    android:textSize="14sp"
+                    android:textStyle="bold" />
             </LinearLayout>
 
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="#21262D" />
+
+            <!-- Gender row -->
             <LinearLayout
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:orientation="horizontal">
+                android:orientation="horizontal"
+                android:gravity="center_vertical"
+                android:paddingTop="10dp"
+                android:paddingBottom="10dp">
                 <TextView
                     android:layout_width="100dp"
                     android:layout_height="wrap_content"
                     android:text="@string/label_gender_confirm"
-                    android:textStyle="bold"
-                    android:textColor="@color/color_text_primary" />
+                    android:textColor="@color/splash_text_muted"
+                    android:textSize="12sp"
+                    android:letterSpacing="0.05" />
                 <TextView
                     android:id="@+id/tvGender"
                     android:layout_width="0dp"
                     android:layout_height="wrap_content"
                     android:layout_weight="1"
-                    android:textColor="@color/color_text_secondary" />
+                    android:textColor="@color/white"
+                    android:textSize="14sp"
+                    android:textStyle="bold" />
             </LinearLayout>
 
         </LinearLayout>
 
+        <!-- Back to Home button -->
         <Button
             android:id="@+id/btnBackToHome"
             android:layout_width="match_parent"
             android:layout_height="56dp"
             android:text="@string/btn_back_home"
-            android:textSize="16sp"
+            android:textSize="15sp"
             android:textStyle="bold"
-            android:backgroundTint="@color/color_primary"
-            android:textColor="@color/white" />
+            android:textColor="@color/white"
+            android:letterSpacing="0.05"
+            android:background="@drawable/accent_button_bg"
+            android:stateListAnimator="@null" />
 
     </LinearLayout>
 
