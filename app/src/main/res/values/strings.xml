@@ -1,3 +1,67 @@
 <resources>
-    <string name="app_name">2023CS128-event-management</string>
+    <string name="app_name">Smart Event Manager</string>
+
+    <!-- Splash -->
+    <string name="splash_welcome">Welcome to</string>
+    <string name="splash_tagline">Your smart way to manage events</string>
+
+    <!-- Main -->
+    <string name="main_title">Smart Event Manager</string>
+    <string name="main_description">Discover, register, and manage events seamlessly. From seminars to cultural festivals — we\'ve got you covered.</string>
+    <string name="btn_register">Register for Event</string>
+
+    <!-- Registration -->
+    <string name="reg_title">Event Registration</string>
+    <string name="hint_name">Full Name</string>
+    <string name="hint_phone">Phone Number</string>
+    <string name="hint_email">Email Address</string>
+    <string name="label_event_type">Event Type</string>
+    <string name="label_date">Date of Event</string>
+    <string name="hint_date">Select Date</string>
+    <string name="btn_pick_date">Pick Date</string>
+    <string name="label_gender">Gender</string>
+    <string name="radio_male">Male</string>
+    <string name="radio_female">Female</string>
+    <string name="radio_other">Other</string>
+    <string name="label_photo">Profile Photo</string>
+    <string name="btn_pick_image">Pick from Gallery</string>
+    <string name="cb_terms">I agree to the Terms &amp; Conditions</string>
+    <string name="btn_submit">Submit Registration</string>
+
+    <!-- Validation errors -->
+    <string name="err_name">Please enter your full name</string>
+    <string name="err_phone">Please enter a valid phone number</string>
+    <string name="err_email">Please enter a valid email address</string>
+    <string name="err_event_type">Please select an event type</string>
+    <string name="err_date">Please select a date</string>
+    <string name="err_gender">Please select your gender</string>
+    <string name="err_image">Please select a profile photo</string>
+    <string name="err_terms">Please accept the Terms &amp; Conditions</string>
+
+    <!-- Dialog -->
+    <string name="dialog_title">Confirm Registration</string>
+    <string name="dialog_message">Are you sure you want to submit your registration?</string>
+    <string name="dialog_confirm">Confirm</string>
+    <string name="dialog_cancel">Cancel</string>
+
+    <!-- Confirmation -->
+    <string name="confirm_title">Registration Successful!</string>
+    <string name="confirm_message">Your event registration has been confirmed.</string>
+    <string name="label_name">Name:</string>
+    <string name="label_phone">Phone:</string>
+    <string name="label_email">Email:</string>
+    <string name="label_event">Event Type:</string>
+    <string name="label_date_confirm">Date:</string>
+    <string name="label_gender_confirm">Gender:</string>
+    <string name="btn_back_home">Back to Home</string>
+
+    <!-- Event types -->
+    <string-array name="event_types">
+        <item>Select Event Type</item>
+        <item>Seminar</item>
+        <item>Workshop</item>
+        <item>Conference</item>
+        <item>Webinar</item>
+        <item>Cultural Event</item>
+    </string-array>
 </resources>

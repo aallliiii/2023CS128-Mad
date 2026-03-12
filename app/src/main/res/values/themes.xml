@@ -1,5 +1,15 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
 
-    <style name="Theme._2023CS128eventmanagement" parent="android:Theme.Material.Light.NoActionBar" />
+    <style name="Theme._2023CS128eventmanagement" parent="Theme.AppCompat.Light.NoActionBar">
+        <item name="colorPrimary">@color/color_primary</item>
+        <item name="colorPrimaryDark">@color/color_primary_dark</item>
+        <item name="colorAccent">@color/color_accent</item>
+    </style>
+
+    <style name="Theme.Splash" parent="Theme.AppCompat.Light.NoActionBar">
+        <item name="android:windowBackground">@color/color_primary</item>
+        <item name="android:statusBarColor">@color/color_primary_dark</item>
+    </style>
+
 </resources>

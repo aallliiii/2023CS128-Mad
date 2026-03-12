@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="utf-8"?>
+<vector xmlns:android="http://schemas.android.com/apk/res/android"
+    android:width="200dp"
+    android:height="200dp"
+    android:viewportWidth="200"
+    android:viewportHeight="200">
+
+    <!-- Calendar background -->
+    <path
+        android:fillColor="#1565C0"
+        android:pathData="M30,50 Q30,40 40,40 L160,40 Q170,40 170,50 L170,170 Q170,180 160,180 L40,180 Q30,180 30,170 Z" />
+
+    <!-- Calendar top bar -->
+    <path
+        android:fillColor="#0D47A1"
+        android:pathData="M30,40 Q30,30 40,30 L160,30 Q170,30 170,40 L170,65 L30,65 Z" />
+
+    <!-- Calendar rings left -->
+    <path
+        android:fillColor="#FF6F00"
+        android:pathData="M65,20 Q65,15 70,15 Q75,15 75,20 L75,45 Q75,50 70,50 Q65,50 65,45 Z" />
+
+    <!-- Calendar rings right -->
+    <path
+        android:fillColor="#FF6F00"
+        android:pathData="M125,20 Q125,15 130,15 Q135,15 135,20 L135,45 Q135,50 130,50 Q125,50 125,45 Z" />
+
+    <!-- Grid lines horizontal -->
+    <path
+        android:fillColor="#FFFFFF"
+        android:fillAlpha="0.3"
+        android:pathData="M35,90 L165,90 L165,93 L35,93 Z" />
+    <path
+        android:fillColor="#FFFFFF"
+        android:fillAlpha="0.3"
+        android:pathData="M35,115 L165,115 L165,118 L35,118 Z" />
+    <path
+        android:fillColor="#FFFFFF"
+        android:fillAlpha="0.3"
+        android:pathData="M35,140 L165,140 L165,143 L35,143 Z" />
+
+    <!-- Grid lines vertical -->
+    <path
+        android:fillColor="#FFFFFF"
+        android:fillAlpha="0.3"
+        android:pathData="M65,68 L68,68 L68,175 L65,175 Z" />
+    <path
+        android:fillColor="#FFFFFF"
+        android:fillAlpha="0.3"
+        android:pathData="M97,68 L100,68 L100,175 L97,175 Z" />
+    <path
+        android:fillColor="#FFFFFF"
+        android:fillAlpha="0.3"
+        android:pathData="M130,68 L133,68 L133,175 L130,175 Z" />
+
+    <!-- Star/highlight on a date cell -->
+    <path
+        android:fillColor="#FF6F00"
+        android:pathData="M100,95 L104,107 L116,107 L107,114 L110,126 L100,119 L90,126 L93,114 L84,107 L96,107 Z" />
+
+    <!-- White text dots for other dates -->
+    <path
+        android:fillColor="#FFFFFF"
+        android:pathData="M48,75 m-4,0 a4,4 0 1,0 8,0 a4,4 0 1,0 -8,0" />
+    <path
+        android:fillColor="#FFFFFF"
+        android:pathData="M80,75 m-4,0 a4,4 0 1,0 8,0 a4,4 0 1,0 -8,0" />
+    <path
+        android:fillColor="#FFFFFF"
+        android:pathData="M143,75 m-4,0 a4,4 0 1,0 8,0 a4,4 0 1,0 -8,0" />
+
+    <!-- Bottom decoration dots -->
+    <path
+        android:fillColor="#FFFFFF"
+        android:fillAlpha="0.7"
+        android:pathData="M48,150 m-5,0 a5,5 0 1,0 10,0 a5,5 0 1,0 -10,0" />
+    <path
+        android:fillColor="#FFFFFF"
+        android:fillAlpha="0.7"
+        android:pathData="M48,165 m-5,0 a5,5 0 1,0 10,0 a5,5 0 1,0 -10,0" />
+    <path
+        android:fillColor="#FF6F00"
+        android:pathData="M143,150 m-5,0 a5,5 0 1,0 10,0 a5,5 0 1,0 -10,0" />
+    <path
+        android:fillColor="#FF6F00"
+        android:pathData="M143,165 m-5,0 a5,5 0 1,0 10,0 a5,5 0 1,0 -10,0" />
+
+</vector>
